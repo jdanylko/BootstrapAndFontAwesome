@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Bootstrap/FontAwesome Examples";
+}
+
+<h3 class="my-4">Simple Button</h3>
+
+<button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
+
+<h3 class="my-4">Processing Text Box</h3>
+
+<form>
+
+    <div class="input-group mb-3">
+        <input id="SearchTerm" type="text" class="form-control" placeholder="Search"
+               aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <span class="input-group-text search-icon" id="basic-addon2">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="dropdown-menu suggestions" hidden>
+        </div>
+    </div>
+
+</form>
+
+<h3 class="my-4">"Loading" Modal Dialog Box</h3>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<h3 class="my-4">Kebab Menu</h3>
+
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+
+    <div class="btn-group kebab" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+        </div>
+    </div>
+</div>
+
+<h3 class="my-4">Unordered List Icons</h3>
+
+<ul class="fa-ul" style="font-size: 2rem">
+    <li><span class="fa-li"><i class="fas fa-fw fa-seedling" style="background: lightgreen"></i></span>Spring</li>
+    <li><span class="fa-li"><i class="fas fa-fw fa-umbrella-beach" style="background: lightyellow"></i></span>Summer</li>
+    <li><span class="fa-li"><i class="fas fa-fw fa-leaf" style="background: brown"></i></span>Fall</li>
+    <li><span class="fa-li"><i class="far fa-fw fa-snowflake" style="background: whitesmoke"></i></span>Winter</li>
+</ul>
+
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="overlay">
+                <span class="fas fa-spinner fa-spin fa-2x w-100"></span> Loading...
+            </div>
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
